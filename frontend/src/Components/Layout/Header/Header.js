@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import { NavLink } from "react-router-dom";
 
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -54,7 +55,9 @@ export default class Header extends Component {
               style={{ color: "#2a3444" }}
               //   onClick={()}
             >
-              <AccountCircle />
+              <NavLink to="/login">
+                <AccountCircle />
+              </NavLink>
             </IconButton>
 
             <IconButton
